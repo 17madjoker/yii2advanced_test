@@ -30,6 +30,9 @@ return [
                 ],
             ],
         ],
+        'StrposHelper' => [
+            'class' => 'common\components\StrposHelper',
+        ],
     ],
     'params' => $params,
 ];

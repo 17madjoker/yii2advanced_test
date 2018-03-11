@@ -46,9 +46,6 @@ return [
                 'news/<id:\d+>' => 'test/view',
             ],
         ],
-        'StrpoHelper' => [
-            'class' => 'frontend\components\StrposHelper',
-        ],
         'mailer' => [
             'class' => 'yii\swiftmailer\Mailer',
         ],
