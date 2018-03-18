@@ -15,9 +15,10 @@ return [
     'components' => [
         'request' => [
             'csrfParam' => '_csrf-frontend',
+            'enableCsrfValidation' => false,
         ],
         'user' => [
-            'identityClass' => 'common\models\User',
+            'identityClass' => 'frontend\models\User',
             'enableAutoLogin' => true,
             'identityCookie' => ['name' => '_identity-frontend', 'httpOnly' => true],
         ],
@@ -49,7 +50,24 @@ return [
         'mailer' => [
             'class' => 'yii\swiftmailer\Mailer',
         ],
+ /*      'assetManager' => [
+            'bundles' => [
+          'yii\web\JqueryAsset' => [
+                    'js' => []
+                ],
+                'yii\web\YiiAsset' => [
+                    'js' => []
+                ],
+                'yii\bootstrap\BootstrapPluginAsset' => [
+                    'js' => []
+                ],
+            ]
+        ]*/
         
     ],
     'params' => $params,
+    'aliases' => [
+        '@files' => '/var/www/yii2/frontend/files',
+        '@photos' => '@files/photo'
+    ]
 ];

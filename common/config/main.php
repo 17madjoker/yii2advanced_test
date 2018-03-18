@@ -12,5 +12,8 @@ return [
         'StrposHelper' => [
             'class' => 'common\components\StrposHelper',
         ],
+        'EmailService' => [
+            'class' => 'common\components\EmailService',
+        ],
     ],
 ];

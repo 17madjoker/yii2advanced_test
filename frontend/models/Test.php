@@ -17,7 +17,7 @@ class Test
         $Strpos_helper = Yii::$app->StrposHelper;
         foreach ($results as &$result) 
         {
-            $result['content'] = $Strpos_helper->getShort($result['content'],6);
+            $result['content'] = $Strpos_helper->getShort($result['content']);
         }
         return $results;
     }
